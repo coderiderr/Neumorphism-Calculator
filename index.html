@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator | Coderider</title>
+</head>
+<body>
+    <div class="calculator">
+        <form id="my-cal-light">
+            <div class="display-result">
+                <input type="text" id="displayNum" name="displayNum" placeholder="0" class="calculation-input">
+                <input type="text" id="displayResult" name="displayResult" class="result-input" readonly>
+            </div>
+            <div class="calculation-items">
+                <div class="row-calculate">
+                    <div class="cal-item math-item">
+                        <input type="button" name="resetCalculate" value="c" onclick="reset_calculate()">
+                    </div>
+                    <div class="cal-item math-item">
+                        <input type="button" name="clearOneItem" value="&#9003;" onclick="clearineitem()">
+                    </div>
+                    <div class="cal-item math-item">
+                        <input type="button" name="remain" value="%" onclick="addCalculateItem(remain.value)">
+                    </div>
+                    <div class="cal-item math-item green-input">
+                        <input type="button" name="plus" value="+" onclick="addCalculateItem(plus.value)">
+                    </div>
+                </div>
+                <div class="row-calculate">
+                    <div class="cal-item">
+                        <input type="button" name="n1" value="1" onclick="addCalculateItem(n1.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n2" value="2" onclick="addCalculateItem(n2.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n3" value="3" onclick="addCalculateItem(n3.value)">
+                    </div>
+                    <div class="cal-item math-item green-input">
+                        <input type="button" name="neg" value="-" onclick="addCalculateItem(neg.value)">
+                    </div>
+                </div>
+                <div class="row-calculate">
+                    <div class="cal-item">
+                        <input type="button" name="n4" value="4" onclick="addCalculateItem(n4.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n5" value="5" onclick="addCalculateItem(n5.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n6" value="6" onclick="addCalculateItem(n6.value)">
+                    </div>
+                    <div class="cal-item math-item green-input">
+                        <input type="button" name="mp" value="*" onclick="addCalculateItem(mp.value)">
+                    </div>
+                </div>
+                <div class="row-calculate">
+                    <div class="cal-item">
+                        <input type="button" name="n7" value="7" onclick="addCalculateItem(n7.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n8" value="8" onclick="addCalculateItem(n8.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n9" value="9" onclick="addCalculateItem(n9.value)">
+                    </div>
+                    <div class="cal-item math-item green-input">
+                        <input type="button" name="dp" value="/" onclick="addCalculateItem(dp.value)">
+                    </div>
+                </div>
+    
+                <div class="row-calculate">
+                    <div class="cal-item">
+                        <input type="button" name="n0" value="0" onclick="addCalculateItem(n0.value)">
+                    </div>
+                    <div class="cal-item">
+                        <input type="button" name="n_dot" value="." onclick="addCalculateItem(n_dot.value)">
+                    </div>
+                    <div class="cal-item eval-item math-item">
+                        <input type="button" id="" name="" value="=" onclick="evalCalculateItem()">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

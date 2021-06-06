@@ -1,0 +1,123 @@
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: arial;
+  background: #e8e8e8;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "digital-7";
+  src: url(digital-7.ttf) format("truetype");
+}
+input {
+  outline: 0;
+}
+#my-cal-light {
+  position: relative;
+  background-color: #fff;
+  padding-top: 70px;
+  width: 300px;
+  border-radius: 35px;
+  background: #f0f0f0;
+  box-shadow: inset 6px 6px 12px #ffff, inset -6px -6px 12px #d7d7d7,
+    10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#my-cal-light::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 4px;
+  right: -5px;
+  top: 100px;
+  background: #f0f0f0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#my-cal-light::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 4px;
+  right: -5px;
+  top: 210px;
+  background: #f0f0f0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#my-cal-light .display-result {
+  position: relative;
+  margin: 0 10px;
+  height: 160px;
+  border-radius: 10px;
+  background: #000000;
+  border: 8px solid #acacac;
+  color: #21a6b0;
+}
+#my-cal-light .display-result input {
+  font-weight: 400;
+  font-family: "digital-7";
+  width: 100%;
+  border: none;
+  text-align: right;
+  background-color: transparent;
+}
+#my-cal-light .calculation-input {
+  padding: 5px 15px;
+  color: #4db6b1;
+  font-size: 2.5rem;
+}
+#my-cal-light .calculation-input::placeholder {
+  opacity: 1;
+}
+#my-cal-light .result-input {
+  font-size: 3rem;
+  padding: 5px 15px;
+  color: #21a6b0;
+}
+#my-cal-light .calculation-items {
+  border-radius: 35px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+#my-cal-light .row-calculate {
+  display: flex;
+}
+#my-cal-light .cal-item {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  box-shadow: 6px 6px 12px #d7d7d7, -6px -6px 12px #ffffff;
+}
+#my-cal-light .eval-item {
+  width: 140px;
+  background: #f48e97;
+}
+#my-cal-light .cal-item input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  color: #747474;
+}
+#my-cal-light .eval-item input {
+  color: #fff;
+}
+#my-cal-light .math-item input {
+  font-size: 30px;
+}
+#my-cal-light .green-input {
+  background-color: #75d0c4;
+}
+#my-cal-light .green-input input {
+  color: #fff;
+}
